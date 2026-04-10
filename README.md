@@ -11,10 +11,12 @@
 
 ## 使用方式
 
-### 方式一：Claude Code 插件（推荐）
+### 方式一：Claude Code 插件
 
 ```bash
-claude plugin install github:feishu-personal/shuttle-bus-skill
+git clone https://github.com/a4001234567/shuttle-bus-skill
+claude plugins marketplace add ./shuttle-bus-skill
+claude plugin install shuttle-bus
 ```
 
 安装后直接向 Claude 提问即可，例如：
@@ -37,7 +39,7 @@ claude plugin install github:feishu-personal/shuttle-bus-skill
 ## 目录结构
 
 ```
-shuttle-bus/
+shuttle-bus-skill/
   SKILL.md                   ← 独立版（内嵌脚本，适用于任意 AI 工具）
   README.md
   .claude-plugin/
