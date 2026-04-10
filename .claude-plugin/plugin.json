@@ -1,0 +1,9 @@
+{
+  "name": "shuttle-bus",
+  "version": "1.0.0",
+  "description": "Real-time shuttle bus tracking for 无界学城 (Shenzhen University Town). Live GPS position, ETA estimation, and station/POI reference for Lines 1, 2C, and 2A.",
+  "author": {
+    "name": "feishu-personal",
+    "url": "https://github.com/feishu-personal/shuttle-bus-skill"
+  }
+}
