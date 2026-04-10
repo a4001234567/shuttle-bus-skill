@@ -14,9 +14,8 @@
 ### 方式一：Claude Code 插件
 
 ```bash
-git clone https://github.com/a4001234567/shuttle-bus-skill
-claude plugins marketplace add ./shuttle-bus-skill
-claude plugin install shuttle-bus
+claude plugins marketplace add a4001234567/shuttle-bus-skill
+claude plugin install shuttle-bus@shuttle-bus-skill
 ```
 
 安装后直接向 Claude 提问即可，例如：
@@ -40,15 +39,18 @@ claude plugin install shuttle-bus
 
 ```
 shuttle-bus-skill/
-  SKILL.md                   ← 独立版（内嵌脚本，适用于任意 AI 工具）
+  SKILL.md                        ← 独立版（内嵌脚本，适用于任意 AI 工具）
   README.md
   .claude-plugin/
-    plugin.json              ← Claude Code 插件清单
-  skills/
-    shuttle-bus/
-      SKILL.md               ← Claude Code 插件版（使用 {baseDir} 变量）
-  scripts/
-    fetch.py                 ← 数据获取脚本（插件版使用）
+    marketplace.json              ← Claude Code 插件市场清单
+  shuttle-bus/                    ← Claude Code 插件目录
+    .claude-plugin/
+      plugin.json
+    skills/
+      shuttle-bus/
+        SKILL.md
+    scripts/
+      fetch.py
 ```
 
 ## 环境要求
