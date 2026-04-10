@@ -1,0 +1,17 @@
+{
+  "name": "shuttle-bus-skill",
+  "owner": {
+    "name": "a4001234567"
+  },
+  "metadata": {
+    "description": "无界学城穿梭巴士实时查询技能",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "shuttle-bus",
+      "description": "Real-time shuttle bus tracking for 无界学城 (Shenzhen University Town). Live GPS position, ETA estimation, and station/POI reference for Lines 1, 2C, and 2A.",
+      "source": "./shuttle-bus"
+    }
+  ]
+}
